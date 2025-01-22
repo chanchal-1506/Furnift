@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>furnift</title>
+   
+</head>
+<body class="font-serif">
+
+   <header class="  w-[100%] pt-[2.5rem] pb-10 flex justify-between items-center font-serif  ">
+        <div class="flex text-[1.5rem]">
+            <h1 class="bg-black size-10 rounded-lg text-white pl-3 ">F</h1>
+            <h1 class=" pl-3">Furnift</h1>
+        </div>
+        <nav class="hidden md:flex text-[1.5rem] space-x-8  ">
+            <a href="#home" class="hover:text-gray-500">Home</a>
+            <a href="#about" class="hover:text-gray-500">About</a>
+            <a href="#shop" class="hover:text-gray-500">Shop</a>
+            <a href="#cart" class="hover:text-gray-500">Cart</a>
+        </nav>
+        <div class="text-[1.5rem] flex space-x-4 md:space-x-6">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <button onclick="openNav()" class=" text-3xl">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Side Navbar (for Small Screens) -->
+    <div id="sideNav" class="fixed top-0 left-0 w-[53%] md:hidden h-screen bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50">
+        <!-- Close Button -->
+        <div class="flex justify-between items-center px-6 py-4 border-b">
+            <h2 class="text-2xl font-bold">Furnift</h2>
+            <button onclick="closeNav()" class="text-3xl">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+
+    <!-- Nav Links -->
+    <ul class="flex flex-col gap-6 text-xl p-6">
+        <li><a href="#home" class="hover:text-gray-600">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-600">About</a></li>
+        <li><a href="#cart" class="hover:text-gray-600">Cart</a></li>
+        <li><a href="#shop" class="hover:text-gray-600">Shop</a></li>
+    </ul>
+    </div>
+
+
+    <section class=" container mx-auto w-[95%] h-[600px] sm:h-[700px] md:h-[550px] mt-4 md:flex md:gap-16  " id="home">
+        <div class="w-[100%] md:w-[50%]  lg:w-[50%]  sm:h-[40%] h-[43%] md:h-[90%] flex flex-col    md:pt-8  " >
+            <h1 class=" xl:text-[6rem] lg:text-[4rem] md:text-[3rem] sm:text-[3.5rem] text-[2.5rem] text-center md:text-start leading-[3.5rem]  md:px-0 md:leading-[4rem] lg:leading-[5rem] xl:leading-[7rem]  ">We create home more aesthetic</h1>
+            <p class=" xl:text[2.5rem] lg:text-[1.7rem] md:text-[1.5rem] sm:text-[1.3rem] text-[1.3rem] text-center md:text-start md:px-0 px-4 font-serif pt-6  tracking-tight text-[#ada9a9] pr-4">Enjoy the new furniture every time you move and feel the castle house of your dreams.</p>
+            <button class=" hidden sm:block w-[20%] sm:w-[30%] md:w-[40%] bg-[#745A32] md:text-[20px]  rounded-lg md:px-4 md:py-3 md:mx-0  md:my-8 py-3 my-4  mx-[14rem]  ">Get Started</button>
+        </div>
+        
+        <div class="md:mt-4 flex justify-center h-[54%] sm:h-[55%]  md:h-[80%] lg:h-[88%] lg:w-[35%] md:w-[50%] sm:w-[100%] w-[100%] relative z-10 ">
+           
+            <img src="img/jpeg" alt="Image" class=" w-[60%] sm:w-[50%] md:w-[82%] h-full  rounded-t-full object-cover border-4 border-[#745A32]">
+        </div>
+    </section>
+    
+    <div class="absolute top-0 right-0 w-[250px] h-[250px] md:w-[400px] md:h-[400px] bg-[#745A32] rounded-bl-full rounded-tr-[30%] opacity-50 pointer-events-none z-0"></div>
+
+
+    <section class=" container mx-auto w-[95%] h-[620px] sm:h-[700px] md:h-[550px] mt-10 md:flex md:gap-16  " id="about">
+        <div class=" flex justify-center h-[50%] sm:h-[55%]  md:h-[80%] lg:h-[90%] lg:w-[40%] md:w-[50%] sm:w-[100%] w-[100%] md:pt-8 relative z-10 ">
+           
+            <img src="img/Rose & Grey.jpeg" alt="Image" class=" w-[60%] sm:w-[50%] md:w-[82%] h-full  rounded-b-full object-cover border-4 border-[#745A32]">
+        </div>
+        <div class="w-[100%] md:w-[50%]  lg:w-[50%]  sm:h-[40%] h-[43%] md:h-[90%] flex flex-col    md:pt-8  " >
+            <h1 class=" xl:text-[5rem] lg:text-[4rem] md:text-[3rem] sm:text-[3.5rem] text-[2.2rem] text-center md:text-start leading-[3rem]  md:px-0 md:leading-[4rem] lg:leading-[5rem] xl:leading-[6rem]  ">The best furniture manufacture</h1>
+            <p class=" xl:text[2.5rem] lg:text-[1.7rem] md:text-[1.5rem] sm:text-[1.3rem] text-[1.3rem] text-center md:text-start md:px-0 px-4 font-serif pt-6  tracking-tight text-[#ada9a9] pr-4">Wide range of option of furnitures crafted using the best selected wood in the city so that it makes your home look more elegent and modern.</p>
+            <button class=" hidden sm:block w-[20%] sm:w-[30%] md:w-[40%] md:text-[15px]   rounded-lg md:px-4 md:py-3 md:mx-0  md:my-8 py-3 my-4  mx-[14rem] border border-[#ada9a9] text-[#ada9a9]  ">Learn More</button>
+        </div>
+    </section>
+    
+        <!-- <div class="absolute bottom-0 top-[48rem] left-56 h-[500px] w-[400px] rounded-b-full border-[3px] border-[#745A32] "></div> -->
+       
+        <section class=" container mx-auto w-[95%] h-[600px] sm:h-[700px] md:h-[550px] mt-4 md:flex md:gap-16  " id="shop">
+            <div class="w-[100%] md:w-[50%]  lg:w-[50%]  sm:h-[40%] h-[43%] md:h-[90%] flex flex-col    md:pt-8  " >
+                <h1 class=" xl:text-[6rem] lg:text-[4rem] md:text-[3rem] sm:text-[3.5rem] text-[2.5rem] text-center md:text-start leading-[3.5rem]  md:px-0 md:leading-[4rem] lg:leading-[5rem] xl:leading-[7rem]  ">Many Unique Furniture</h1>
+                <p class=" xl:text[2.5rem] lg:text-[1.7rem] md:text-[1.5rem] sm:text-[1.3rem] text-[1.2rem] text-center md:text-start md:px-0 px-4 font-serif pt-2 md:pt-3  tracking-tight text-[#ada9a9] pr-4">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything.</p>
+                <button class=" hidden sm:block w-[20%] sm:w-[30%] md:w-[40%] md:text-[15px]  rounded-lg md:px-4 md:py-3 md:mx-0  md:my-8 py-3 my-4  mx-[14rem] border border-[#ada9a9] text-[#ada9a9]  ">Learn More</button>
+            </div>
+            
+            <div class="pt-3 md:mt-4 flex justify-center h-[56%] sm:h-[55%]  md:h-[80%] lg:h-[88%] lg:w-[35%] md:w-[50%] sm:w-[100%] w-[100%] relative z-10 ">
+               
+                <img src="img/Modern Dining Room Decor_ 21+ Prettiest Dining Chairs to Buy.jpeg" alt="Image" class=" w-[60%] sm:w-[50%] md:w-[82%] h-full  rounded-tl-[55%] object-cover border-4 border-[#745A32]">
+            </div>
+        </section>
+        
+        
+        <section class=" container mx-auto w-[95%] h-[700px] sm:h-[700px] md:h-[550px] mt-10 md:flex md:gap-16  " id="cart">
+
+            <div class=" flex justify-center h-[46%] sm:h-[46%]  md:h-[80%] lg:h-[90%] lg:w-[40%] md:w-[50%] sm:w-[100%] w-[100%] md:pt-8 relative z-10 ">
+                <img src="img/jpeg(2)" alt="Image" class=" w-[60%] sm:w-[46%] md:w-[82%] h-full  rounded-br-[55%] object-cover border-4 border-[#745A32]">
+            </div>
+            <div class="w-[100%] md:w-[50%]  lg:w-[50%]  sm:h-[54%] h-[54%] md:h-[93%] flex flex-col md:pt-8 pt-4  " >
+                <ul class=" flex flex-col items-center md:items-start   gap-2 sm:gap-6 lg:pl-16 ">
+                    <li class="  w-[60%] sm:w-[50%] md:w-[60%]  rounded-lg hover:translate-x-2 duration-1000 hover:bg-[#ebddc8] ">
+                        <i class='bx bx-star  sm:text-[2rem] text-[#745A32] '></i><span class="font-serif text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-[#745A32]  ">Best Quality</span>
+                        <p class=" lg:text-[1.2rem] font-serif sm:pt-[1rem] text-[#ada9a9] leading-6 "> Made exlusively using the premium quality of materials available in the city.</p>
+                    </li>
+                    <li class=" w-[60%] sm:w-[50%]  md:w-[60%] rounded-lg hover:translate-x-2 duration-1000 hover:bg-[#ebddc8]">
+                        <i class='bx bxs-offer sm:text-[2rem] text-[#745A32] '></i><span class=" font-serif text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-[#745A32]">Many Promos</span>
+                        <p class=" lg:text-[1.2rem] font-serif sm:pt-[1rem] text-[#ada9a9] leading-6">There are many promos that make your wallet more economical in your pocket.</p>
+                    </li>
+                    <li class="w-[60%] sm:w-[50%]  md:w-[60%]  rounded-lg hover:translate-x-2 duration-1000 hover:bg-[#ebddc8]">
+                        <i class='bx bxs-map sm:text-[2rem] text-[#745A32] '></i><span class=" font-serif text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem] text-[#745A32]">Fast Shipping</span>
+                        <p class=" lg:text-[1.2rem] font-serif sm:pt-[1rem] text-[#ada9a9] leading-6">No need to worry anout shipping. Our furnitures delivered as soon as possible.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class=" container mx-auto text-center w-[95%] h-[670px] sm:h-[700px] md:h-[400px] mt-10  md:flex md:justify-evenly md:pt-[4rem]  md:gap-14 ">
+            <div class=" flex  text-[1.5rem] pt-[10px] md:pr-4  md:w-[25%] " >
+                <span class=" h-[45px] bg-black text-white md:text-[2rem] rounded-lg px-3 py-1   sm:ml-[16rem] md:ml-0">F</span>
+                <h1 class="pl-3 md:text-[2rem] ">Furnift</h1>
+                <p class="  hidden sm:block sm:w-[40%] md:w-[100%] text-[14px]  text-[#ada9a9] leading-6 mt-14   sm:-ml-[12rem] md:mt-16  md:-ml-28">
+                    Furnift is platform that provide all kind of furniture that you can imagine to make your home more aesthetic.</p>
+            </div>
+            <div class=" ">
+                <h1 class="lg:text-[2rem] text-[1.5rem] font-serif leading-[4rem]">About</h1>
+                <ul class="leading-8 md:leading-10 text-[#745A32] font-serif">
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>Cart</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="lg:text-[2rem] text-[1.5rem] font-serif leading-[4rem]">Categories</h1>
+                <ul class="leading-8 md:leading-10 text-[#745A32] font-serif">
+                    <li>Chairs</li>
+                    <li>Sofa</li>
+                    <li>Tabble</li>
+                    <li>Lamp</li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="lg:text-[2rem] text-[1.5rem] font-serif leading-[4rem]">Contact</h1>
+                <ul class="leading-8 md:leading-10 text-[#745A32] font-serif">
+                    <li>zoya@gmail.com</li>
+                    <li>+1479850089</li>
+                     <li class="text-[1.5rem]"><i class='bx bxl-facebook-square' ></i> <i class='bx bxl-instagram' ></i> <i class='bx bxl-twitter' ></i></li>
+                </ul>
+            </div>
+            </footer>
+        
+        
+    
+   
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+            function openNav() {
+                document.getElementById('sideNav').classList.remove('-translate-x-full');
+            }
+            function closeNav() {
+                document.getElementById('sideNav').classList.add('-translate-x-full');
+            }
+        </script>  
+        
+</body>
+</html>
